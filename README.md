@@ -19,15 +19,15 @@ Clone or download the repo and extract files in your javascript folder then link
 
 Finally, just initialize it:
 ```html
-			$(document).ready(function () {
-				$('.my-list').mgaccordion();
-			});
+$(document).ready(function () {
+	$('.my-list').mgaccordion();
+});
 ```
 
 ## Options
 Currently you can set following options:
 
-layout (string):     default to 'flat'
-				             set it to 'tree' if you want to display the accordion with a tree structure
-leaveOpen (boolean): default to false (mgAccordion close all other submenus when you open a new one)
-										 set it to true if you want all opened submenus remain expanded when you open a new one
+* layout (string):     	default to 'flat'
+			set it to 'tree' if you want to display the accordion with a tree structure
+* leaveOpen (boolean): 	default to false (mgAccordion close all other submenus when you open a new one)
+			set it to true if you want all opened submenus remain expanded when you open a new one
