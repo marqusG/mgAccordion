@@ -1,0 +1,42 @@
+.mg-accordion, .mg-accordion ul{
+	list-style-type: none;
+}
+.mg-accordion .submenu{
+	display: none;
+}
+.my-menu, .mg-flat{
+	width: 300px;
+}
+.justify-items-evenly{
+	justify-content: space-evenly;
+}
+.mg-flat li.dropdown{
+	margin-left: -40px
+}
+.mg-flat .submenu li{
+	margin-left: -20px;
+}
+.mg-flat span.toggler{
+	float: right;
+}
+.mg-flat a{
+	text-decoration: none;
+	display: block;
+}
+.mg-flat li.dropdown a{
+	padding: 10px 5px;
+	border:1px solid #ccc;
+	background: #eee
+}
+a.openItem{
+	background: #0056b3!important;
+	color: #fff;
+}
+.openItem span{
+	transform: rotate(180deg);
+	color: #fff;
+}
+.toggler{
+	transition: all 1s;
+}
+
