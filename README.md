@@ -1,4 +1,4 @@
-#mgAccordion, yet another accordion jQuery plugin
+# mgAccordion, yet another accordion jQuery plugin
 
 Okay, there are a tons like this one, probably better, but his one is my first jQuery plugin and I love it.
 
@@ -8,7 +8,7 @@ By default, it uses a normal boxed layout, but you can choose the built-in 'tree
 
 It provides a basic css you can customize as you prefer.
 
-##Install
+## Install
 
 Clone or download the repo or install via npm running
 ```
@@ -32,7 +32,7 @@ Finally, just initialize it:
 			});
 ```
 
-##Options
+## Options
 Currently you can set following options:
 
 layout (string):     default to 'flat'
