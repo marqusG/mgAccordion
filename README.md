@@ -10,10 +10,19 @@ It provides a basic css you can customize as you prefer.
 
 ##Install
 
-Clone or download the repo and extract files in your javascript folder then link them to your html page:
+Clone or download the repo or install via npm running
+```
+npm install -i mgaccordion
+```
+Extract or copy the downloaded files in your website directory  then put into your html page a link to them. Tipically:
 ```html
-<link rel="stylesheet" type="text/css" href="mgaccordion.css"/>
-<script type="text/javascript" src="mgaccordion.js"></script>
+<!-- <head> section -->
+<link rel="stylesheet" type="text/css" href="css/mgaccordion.css"/>
+<!-- end of <head> section -->
+
+<!-- <footer> section -->
+<script type="text/javascript" src="js/mgaccordion.js"></script>
+<!-- end of <footer> section -->
 ```
 
 Finally, just initialize it:
