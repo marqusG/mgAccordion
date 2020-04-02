@@ -1,5 +1,4 @@
-# mgAccordion
-Yet another accordion jquery plugin
+#mgAccordion, yet another accordion jQuery plugin
 
 Okay, there are a tons like this one, probably better, but his one is my first jQuery plugin and I love it.
 
@@ -9,7 +8,7 @@ By default, it uses a normal boxed layout, but you can choose the built-in 'tree
 
 It provides a basic css you can customize as you prefer.
 
-## Install
+##Install
 
 Clone or download the repo and extract files in your javascript folder then link them to your html page:
 ```html
@@ -19,15 +18,20 @@ Clone or download the repo and extract files in your javascript folder then link
 
 Finally, just initialize it:
 ```html
-$(document).ready(function () {
-	$('.my-list').mgaccordion();
-});
+			$(document).ready(function () {
+				$('.my-list').mgaccordion();
+			});
 ```
 
-## Options
+##Options
 Currently you can set following options:
 
-* layout (string):     	default to 'flat'
-			set it to 'tree' if you want to display the accordion with a tree structure
-* leaveOpen (boolean): 	default to false (mgAccordion close all other submenus when you open a new one)
-			set it to true if you want all opened submenus remain expanded when you open a new one
+layout (string):     default to 'flat'
+				             set it to 'tree' if you want to display the accordion with a tree structure
+leaveOpen (boolean): default to false (mgAccordion close all other submenus when you open a new one)
+										 set it to true if you want all opened submenus remain expanded when you open a new one
+
+## Change log
+*02/04/2020*
++ removed call to unbind (needed only using jQuery UI widget factory)
++ added code to check if the passed element is a list and exit silently if it is not

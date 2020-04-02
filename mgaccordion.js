@@ -19,7 +19,13 @@
 		}
 
 		this.initialize = function () {
-
+			/**
+			 * silently exit if passed element is not a list
+			 */
+			if (!this.is('ul') && !this.is('ol')) {
+				console.log('Element is not a list');
+				return;
+			}
 			this.addClass('mg-accordion');
 			var theme = settings.theme;
 			var leaveOpen = settings.leaveOpen;
@@ -33,7 +39,6 @@
 				if ($this.children('ul').length) {
 					$this.addClass('dropdown')
 						.children('a')
-						.unbind('click') //the click event is fired twice without this
 						.bind('click', $.proxy(function () {
 							if (leaveOpen === false) {
 								closeOther($(this));

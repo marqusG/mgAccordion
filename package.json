@@ -1,0 +1,23 @@
+{
+  "name": "mgaccordion",
+  "version": "1.0.1",
+  "description": "Yet another accordion jQuery plugin",
+  "main": "mgaccordion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marqusG/mgAccordion.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Marco Gasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marqusG/mgAccordion/issues"
+  },
+  "homepage": "https://github.com/marqusG/mgAccordion#readme"
+}
