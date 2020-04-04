@@ -11,13 +11,6 @@
 
 		var openIcon, closeIcon;
 
-		if (this.length > 1) {
-			this.each(function () {
-				$(this).mgaccordion(options)
-			});
-			return this;
-		}
-
 		this.initialize = function () {
 			/**
 			 * silently exit if passed element is not a list
@@ -39,7 +32,7 @@
 				if ($this.children('ul').length) {
 					$this.addClass('dropdown')
 						.children('a')
-						.bind('click', $.proxy(function () {
+						.bind('click', function () {
 							if (leaveOpen === false) {
 								closeOther($(this));
 							}
@@ -47,7 +40,7 @@
 								$(this).toggleClass('closed', $(this).is(':visible'));
 							});
 							updateIcons($(this));
-						})
+						}
 						);
 					$this.find('ul').addClass('submenu');
 					if (theme === 'tree') {
