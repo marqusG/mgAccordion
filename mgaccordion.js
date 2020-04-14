@@ -32,7 +32,8 @@
 				if ($this.children('ul').length) {
 					$this.addClass('dropdown')
 						.children('a')
-						.bind('click', function () {
+						.bind('click', function (e) {
+							e.preventDefault();
 							if (leaveOpen === false) {
 								closeOther($(this));
 							}
